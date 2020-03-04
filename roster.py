@@ -69,6 +69,8 @@ for entry in json_data:
     print("Executing SQL statements")
 
     # insert or ignore means if it blows up, just ignore it,
+    # OR IGNORE MEANS MAKE SURE THE INSERTED IS ALREADY IN TABLE AND
+    # NO DUPLICATES ARE INSERTED
     sql_statement = '''
     INSERT OR IGNORE INTO User (name)
     VALUES ?
