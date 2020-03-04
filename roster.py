@@ -59,6 +59,7 @@ print("the data type of json_data is" + str(type(json_data)))
 print(json_data)
 
 print("Looping for each entry in json_data...")
+# INSERTING THE DATA
 for entry in json_data:
 
     name = entry[0];
